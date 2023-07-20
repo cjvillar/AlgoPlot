@@ -7,7 +7,7 @@ from sorting_algorithms import *
 def visualize_sorting(sort_algorithm):
 
     np.random.seed(0)
-    data = np.random.randint(1, 100, 50)
+    data = np.random.randint(1, 100, 50) # change 50 to desired amount of plots to sort
 
     plt.ion()  # interactive mode for live plotting
     plt.figure()
@@ -29,7 +29,7 @@ def visualize_sorting(sort_algorithm):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Visualize sorting algorithms.")
+    parser = argparse.ArgumentParser(description="Visualize Sorting Algorithms.")
     parser.add_argument(
         "algorithm",
         type=str,

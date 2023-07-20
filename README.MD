@@ -24,3 +24,6 @@ python plot_sort.py insertion_sort
 deactivate 
 
 ```
+
+### Resources:
+[realpython sorting-algorithms-python](https://realpython.com/sorting-algorithms-python/)
