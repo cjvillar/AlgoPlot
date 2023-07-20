@@ -5,7 +5,7 @@
 
 
 
-## Get started:
+## Get started 👩🏻‍💻:
 
  ```bash
 source venv/bin/activate
@@ -20,5 +20,5 @@ python plot_sort.py insertion_sort
 deactivate 
 ```
 
-### Resources:
-[realpython sorting-algorithms-python](https://realpython.com/sorting-algorithms-python/)
+## Resources:
+[RealPython: sorting-algorithms-python](https://realpython.com/sorting-algorithms-python/)
