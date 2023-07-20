@@ -5,7 +5,7 @@
 
 
 
-## Get started 👩🏻‍💻:
+## 👩🏻‍💻 Get started: 
 
  ```bash
 source venv/bin/activate
