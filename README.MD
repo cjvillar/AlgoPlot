@@ -2,15 +2,20 @@
 
 ## Get started:
 1.
-'''
+```bash
 source venv/bin/activate
-'''
+
+```
 2. 
-'''python
+```python
+
 python plot_sort.py insertion_sort
-'''
+
+```
 
 3. 
-'''
+```bash
+
 deactivate 
-'''
+
+```
