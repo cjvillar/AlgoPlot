@@ -13,6 +13,7 @@ def bubble_sort(arr):
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
                 yield arr  # yield returns the updated array at each step
 
+
 # insertion sort
 def insertion_sort(arr):
     n = len(arr)
@@ -26,4 +27,4 @@ def insertion_sort(arr):
         yield arr
 
 
-# TODO: add more algorithms        
+# TODO: add more algorithms
