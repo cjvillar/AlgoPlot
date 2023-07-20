@@ -6,23 +6,18 @@
 
 
 ## Get started:
-1.
-```bash
+
+ ```bash
 source venv/bin/activate
-
-```
-2. 
-```python
-
-python plot_sort.py insertion_sort
-
 ```
 
-3. 
+
 ```bash
+python plot_sort.py insertion_sort
+```
 
+```bash
 deactivate 
-
 ```
 
 ### Resources:
