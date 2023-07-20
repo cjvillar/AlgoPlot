@@ -1,5 +1,10 @@
 # See and Learn Sorting Algorithms.
 
+
+![graph](insertion_sort.gif)
+
+
+
 ## Get started:
 1.
 ```bash
