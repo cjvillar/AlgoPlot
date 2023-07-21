@@ -12,7 +12,7 @@ def visualize_sorting(sort_algorithm):
     plt.ion()  # interactive mode for live plotting
     plt.figure()
     bars = plt.bar(range(len(data)), data, align="center", alpha=0.5, color="Black")
-    plt.title(f"{sort_algorithm.__name__}")  # Hacky way to inser name, idk I'm tired.
+    plt.title(f"{sort_algorithm.__name__}")  # Hacky way to insert sort algo name, idk I'm tired.
     plt.xlabel("Index")
     plt.ylabel("Value")
     plt.show()
@@ -39,7 +39,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "algorithm",
         type=str,
-        choices=["bubble_sort", "insertion_sort", "chris_sort"],  # Add algorithms here
+        choices=["bubble_sort", "insertion_sort","selection_sort", "chris_sort"],  # Add algorithms here
         help="The sorting algorithm to visualize.",
     )
 
@@ -51,5 +51,7 @@ if __name__ == "__main__":
         visualize_sorting(insertion_sort)
     elif args.algorithm == "chris_sort":
         visualize_sorting(chris_sort)
+    elif args.algorithm == "selection_sort":
+        visualize_sorting(selection_sort)
 
         # Update as needed

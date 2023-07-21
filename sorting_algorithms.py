@@ -28,13 +28,25 @@ def insertion_sort(arr):
         arr[j + 1] = key_item
         yield arr
 
-
+ # a nonsensical sorting algorithm
 def chris_sort(arr):
-    # a nonsensical sorting algorithm
+   
     for i in range(len(arr)):
         sort = sorted(arr)
-        yield sort[i::-1]
+        yield sort[i::-1] 
     yield sort[:]
 
 
+# selection sort WORK IN PROGRESS
+def selection_sort(arr):
+    for i in range(len(arr)-1):
+        min_index = i
+        for index in range(i + 1, len(arr)-1):
+            if arr[index] < arr[min_index]:
+                min_index = index
+        arr[i], arr[min_index] = arr[min_index], arr[i]
+        
+        yield arr
+    
+    
 # TODO: add more algorithms
