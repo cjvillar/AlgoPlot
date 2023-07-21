@@ -10,10 +10,13 @@
  ```bash
 source venv/bin/activate
 ```
-
+```bash
+plot_sort.py <algorithm> <dataset size>
+```
 
 ```bash
-python plot_sort.py insertion_sort
+Example:
+python plot_sort.py insertion_sort 20
 ```
 
 ```bash
