@@ -3,6 +3,8 @@ Update with sorting algorithms for use with plot_sort.py
 
 Much Fun! 
 """
+from random import randint
+
 
 # bubble sort
 def bubble_sort(arr):
@@ -25,6 +27,14 @@ def insertion_sort(arr):
             j -= 1
         arr[j + 1] = key_item
         yield arr
+
+
+def chris_sort(arr):
+    # a nonsensical sorting algorithm
+    for i in range(len(arr)):
+        sort = sorted(arr)
+        yield sort[i::-1]
+    yield sort[:]
 
 
 # TODO: add more algorithms
