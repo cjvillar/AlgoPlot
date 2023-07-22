@@ -1,3 +1,10 @@
+'''
+Usage: python plot_sort.py <algorithm> <data size>
+Example: python plot_sort.py heap_sort 20
+
+'''
+
+
 import matplotlib.pyplot as plt
 import numpy as np
 import argparse
@@ -39,7 +46,6 @@ if __name__ == "__main__":
         "algorithm",
         type=str,
         default=50,
-        choices=["bubble_sort", "insertion_sort","selection_sort", "chris_sort"],  # Add algorithms here
         help="The sorting algorithm to visualize.",
     )
     parser.add_argument(
@@ -56,6 +62,7 @@ if __name__ == "__main__":
         "insertion_sort": insertion_sort,
         "chris_sort": chris_sort,
         "selection_sort": selection_sort,
+        "heap_sort": heap_sort,
         # Add more algorithms here 
     }
 
