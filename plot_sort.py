@@ -21,6 +21,7 @@ def visualize_sorting(sort_algorithm, size):
     )  # Hacky way to insert sort algo name, idk I'm tired.
     plt.xlabel("Index")
     plt.ylabel("Value")
+    plt.ion()
 
     for sorted_data in sort_algorithm(data):
         # Update the heights of the bars to reflect the current state of the array
