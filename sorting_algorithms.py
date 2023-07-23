@@ -32,24 +32,24 @@ def insertion_sort(arr):
         arr[j + 1] = key_item
         yield arr
 
- # a nonsensical sorting algorithm
+
+# a nonsensical sorting algorithm
 def chris_sort(arr):
-   
     for i in range(len(arr)):
         sort = sorted(arr)
-        yield sort[i::-1] 
+        yield sort[i::-1]
     yield sort[:]
 
 
-# selection sort 
+# selection sort
 def selection_sort(arr):
-    for i in range(len(arr)-1):
+    for i in range(len(arr) - 1):
         min_index = i
-        for index in range(i + 1, len(arr)-1):
+        for index in range(i + 1, len(arr) - 1):
             if arr[index] < arr[min_index]:
                 min_index = index
         arr[i], arr[min_index] = arr[min_index], arr[i]
-        
+
         yield arr
 
 
@@ -68,14 +68,16 @@ def heapify(array, n, i):
     if largest != i:
         array[i], array[largest] = array[largest], array[i]
         heapify(array, n, largest)
-        
+
+
 def heap_sort(array):
     n = len(array)
-    for i in range(n//2, -1, -1):
+    for i in range(n // 2, -1, -1):
         heapify(array, n, i)
-    for i in range(n-1, 0, -1):
+    for i in range(n - 1, 0, -1):
         array[i], array[0] = array[0], array[i]
         heapify(array, i, 0)
         yield array
-    
+
+
 # TODO: add more algorithms
